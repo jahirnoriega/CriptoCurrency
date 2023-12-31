@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pices Criptocurrencies</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="shortcut icon" href="/images/icon.webp" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="icon-nav">
+          <a href="index.html"><img src="img/icon.webp" alt="" /> </a>
+        </div>
+        <div class="menu">
+          <a href="aboutme.html"
+            ><div class="link-header"><p>Image Lookup</p></div></a
+          >
+          <a href="https://weather-api-jn.netlify.app/"
+            ><div class="link-header"><p>Wheather</p></div></a
+          >
+          <a href="index.html"
+            ><div class="link-header"><p>Criptocurrency</p></div></a
+          >
+          <a href="certificates.html"
+            ><div class="link-header"><p>Store</p></div></a
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-half column">
+          <img id="cripto" src="img/cryptomonedas.png" />
+        </div>
+        <div class="one-half column">
+          <form id="formulario">
+            <div class="row">
+              <label>Choose Currency</label>
+              <select class="u-full-width" id="moneda" name="moneda">
+                <option value="">-- Select --</option>
+                <option value="USD">Dolar</option>
+                <option value="MXN">Mexican Peso</option>
+                <option value="GBP">Pounds</option>
+                <option value="EUR">Euros</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <div>
+                <label>Choose Criptocurrency</label>
+                <select
+                  class="u-full-width"
+                  id="criptomonedas"
+                  name="criptomoneda"
+                >
+                  <option value="">Select</option>
+                  <option value="BTC">Bitcoin (BTC)</option>
+                  <option value="ETH">Ethereum (ETH)</option>
+                  <option value="USDT">Tether (USDT)</option>
+                  <option value="USDC">USD Coin (USDC)</option>
+                  <option value="BNB">BNB (BNB)</option>
+                  <option value="XRP">XRP (XRP)</option>
+                  <option value="ADA">Cardano (ADA)</option>
+                  <option value="SOL">Solana (SOL)</option>
+                  <option value="DOGE">Dogecoin (DOGE)</option>
+                  <option value="DOT">Polkadot (DOT)</option>
+                </select>
+              </div>
+            </div>
+            <input
+              class="button-primary u-full-width"
+              type="submit"
+              value="Get Stock Price"
+            />
+
+            <div class="message-container" id="message-container"></div>
+            <div id="resultado" class="resultado"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
